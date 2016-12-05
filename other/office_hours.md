@@ -4,5 +4,5 @@ Questions that can have a broader benefit are better discussed on Slack with the
 
 
   * Jim
-    * Thur 5:30-6:15 –(in person) Seattle Tower third floor
-    * Monday 5:00-5:45 – (Skype or Google Hangouts)
+    * Monday 5:30-6:10 – (in person) Seattle Tower third floor 
+    * Tuesday 5:00-6:00 – (Skype or Google Hangouts or phone call)
