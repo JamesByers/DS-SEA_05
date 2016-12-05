@@ -14,9 +14,9 @@ Monday | Wednesday
 12/19: [L05 Fetching Data](#fetching-data), **Project Discussion Deadline** | 
  | 
 **Foundations of data modeling**|
- | 12/21: [L06 Intro to Regression](#intro-to-regression), **Project Question and Dataset Due**
+ | 12/21: [L06 Intro to Classification - K nearest neighbor](#knn), **Project Question and Dataset Due**
 12/26: Holiday | 12/28: Holiday
-1/2: Holiday | 1/04: [L07 Intro to Classification - K nearest neighbor](#knn)
+1/2: Holiday | 1/04: [L07 Intro to Regression](#intro-to-regression)
 1/9: [L08 Evaluating Model Fit](#evaluating-fit) | 1/11: [L09 Classifying with Logistic Regression](#logistic-regression)
 1/16: Holiday | 1/18: [L10 Advanced model evaluation](#advanced-model)
 1/23: [L11 Standardization and Clustering](#clustering) | 1/25: L12 **First Project Presentations** + bonus topics | 
@@ -299,8 +299,39 @@ Name | Description
 
 -----
 
+<a name="knn"></a>
+### Class 6: K-Nearest Neighbors
+
+**After this lesson you will be able to:**
+* Indentify the steps to build a predictive model in scikit-learn
+* Create a k nearest neighbors (knn) predictive model
+* Describe the difference between a supervised and unsupervised model
+
+**Topics/Highlights:**
+* K-nearest neighbors (KNN) and scikit-learn ([notebook](notebooks/07_knn_sklearn.ipynb))
+* Exercise with NBA player data ([notebook](notebooks/07_nba_knn.ipynb), [data](/data/NBA_players_2015.csv), [data dictionary](/slides/07_nba_paper.pdf))
+* Bonus content not covered in this lesson: Machine learning types and terms [(slides)](slides/07_machine_learning.pdf) 
+
+**Homework:**
+* Due 1/4: Complete this [homework assignment](homework/06_yelp_votes_homework.ipynb) with the [Yelp data](data/yelp.csv)
+
+**KNN Resources:**
+* [(notebook)](notebooks/07_human_learning_iris.ipynb) An example of the steps one would go through using "human learning" to come up with a rule to classify new iris observations based on the Iris data set.  Contains a refresher on many Pandas techniques such as groupby and visulaization.
+* For a recap of the key points about KNN and scikit-learn, watch [Getting started in scikit-learn with the famous iris dataset](https://www.youtube.com/watch?v=hd1W4CyPX58) (15 minutes) and [Training a machine learning model with scikit-learn](https://www.youtube.com/watch?v=RlQuVL6-qe8) (20 minutes).
+* KNN supports [distance metrics](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html) other than Euclidean distance, such as [Mahalanobis distance](http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance), which [takes the scale of the data into account](http://blogs.sas.com/content/iml/2012/02/15/what-is-mahalanobis-distance.html).
+* [A Detailed Introduction to KNN](https://saravananthirumuruganathan.wordpress.com/2010/05/17/a-detailed-introduction-to-k-nearest-neighbor-knn-algorithm/) is a bit dense, but provides a more thorough introduction to KNN and its applications.
+* This lecture on [Image Classification](http://cs231n.github.io/classification/) shows how KNN could be used for detecting similar images, and also touches on topics we will cover in future classes (hyperparameter tuning and cross-validation).
+* Some applications for which KNN is well-suited are [object recognition](http://vlm1.uta.edu/~athitsos/nearest_neighbors/), [satellite image enhancement](http://land.umn.edu/documents/FS6.pdf), [document categorization](http://www.ceng.metu.edu.tr/~e120321/paper.pdf), and [gene expression analysis](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.208.993).
+
+**Seaborn Resources:**
+* The official Seaborn website has a series of [detailed tutorials](http://web.stanford.edu/~mwaskom/software/seaborn/tutorial.html) and an [example gallery](http://web.stanford.edu/~mwaskom/software/seaborn/examples/index.html).
+* [Data visualization with Seaborn](https://beta.oreilly.com/learning/data-visualization-with-seaborn) is a quick tour of some of the popular types of Seaborn plots.
+* [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html) and [How to Create NBA Shot Charts in Python](http://savvastjortjoglou.com/nba-shot-sharts.html) are both good examples of Seaborn usage on real-world data.
+
+-----
+
 <a name="intro-to-regression"></a>
-### Class 6: Intro to regression
+### Class 7: Intro to regression
 
 **After this lesson you will be able to:**
 * Indentify the kinds of problems that Linear Regression can solve
@@ -317,7 +348,12 @@ Name | Description
 <!--* An additional feature engineering example is available here: [Predicting User Engagement in Corporate Collaboration Network](https://github.com/mikeyea/DAT7_project/blob/master/final%20project/Class_Presention_MYea.ipynb) -->
 
 **Homework:**
-* Due 1/4: Complete this [homework assignment](homework/06_yelp_votes_homework.ipynb) with the [Yelp data](data/yelp.csv)
+* The [homework assignment](homework/06_yelp_votes_homework.ipynb) with the [Yelp data](data/yelp.csv) is due 10/13
+* Reading assignment on the [bias-variance tradeoff](homework/08_bias_variance.md)
+* Read Kevin Markhams's [introduction to reproducibility](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), read Jeff Leek's [guide to creating a reproducible analysis](https://github.com/jtleek/datasharing), and watch this related [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes).
+* Optional: Quick Pandas exercise ([notebook](notebooks/08_pandas_review.ipynb)).  Complete this exercise to sharpen your understanding of dataframes.
+* Work on your project... your first project presentation is in less than three weeks!
+
 
 **Linear Regression Resources:**
 * To go much more in-depth on linear regression, read Chapter 3 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). Alternatively, watch the [related videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) or read Kevin Markhams [quick reference guide](http://www.dataschool.io/applying-and-interpreting-linear-regression/) to the key points in that chapter.
@@ -331,41 +367,6 @@ Name | Description
 * [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html) and [How to Create NBA Shot Charts in Python](http://savvastjortjoglou.com/nba-shot-sharts.html) are both good examples of Seaborn usage on real-world data.
 <!--* Types of data ([slides](slides/01_types_of_data.pdf)) and [public data sources](project/public_data.md)
 * Discuss the course project: [requirements](project/README.md) and [example projects](/project/project_examples/README.md) -->
-
------
-
-<a name="knn"></a>
-### Class 7: K-Nearest Neighbors
-
-**After this lesson you will be able to:**
-* Indentify the steps to build a predictive model in scikit-learn
-* Create a k nearest neighbors (knn) predictive model
-* Describe the difference between a supervised and unsupervised model
-
-**Topics/Highlights:**
-* K-nearest neighbors (KNN) and scikit-learn ([notebook](notebooks/07_knn_sklearn.ipynb))
-* Exercise with NBA player data ([notebook](notebooks/07_nba_knn.ipynb), [data](/data/NBA_players_2015.csv), [data dictionary](/slides/07_nba_paper.pdf))
-* Bonus content not covered in this lesson: Machine learning types and terms [(slides)](slides/07_machine_learning.pdf) 
-
-**Homework:**
-* The [homework assignment](homework/06_yelp_votes_homework.ipynb) with the [Yelp data](data/yelp.csv) is due 10/13
-* Reading assignment on the [bias-variance tradeoff](homework/08_bias_variance.md)
-* Read Kevin Markhams's [introduction to reproducibility](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), read Jeff Leek's [guide to creating a reproducible analysis](https://github.com/jtleek/datasharing), and watch this related [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes).
-* Optional: Quick Pandas exercise ([notebook](notebooks/08_pandas_review.ipynb)).  Complete this exercise to sharpen your understanding of dataframes.
-* Work on your project... your first project presentation is in less than three weeks!
-
-**KNN Resources:**
-* [(notebook)](notebooks/07_human_learning_iris.ipynb) An example of the steps one would go through using "human learning" to come up with a rule to classify new iris observations based on the Iris data set.  Contains a refresher on many Pandas techniques such as groupby and visulaization.
-* For a recap of the key points about KNN and scikit-learn, watch [Getting started in scikit-learn with the famous iris dataset](https://www.youtube.com/watch?v=hd1W4CyPX58) (15 minutes) and [Training a machine learning model with scikit-learn](https://www.youtube.com/watch?v=RlQuVL6-qe8) (20 minutes).
-* KNN supports [distance metrics](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html) other than Euclidean distance, such as [Mahalanobis distance](http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance), which [takes the scale of the data into account](http://blogs.sas.com/content/iml/2012/02/15/what-is-mahalanobis-distance.html).
-* [A Detailed Introduction to KNN](https://saravananthirumuruganathan.wordpress.com/2010/05/17/a-detailed-introduction-to-k-nearest-neighbor-knn-algorithm/) is a bit dense, but provides a more thorough introduction to KNN and its applications.
-* This lecture on [Image Classification](http://cs231n.github.io/classification/) shows how KNN could be used for detecting similar images, and also touches on topics we will cover in future classes (hyperparameter tuning and cross-validation).
-* Some applications for which KNN is well-suited are [object recognition](http://vlm1.uta.edu/~athitsos/nearest_neighbors/), [satellite image enhancement](http://land.umn.edu/documents/FS6.pdf), [document categorization](http://www.ceng.metu.edu.tr/~e120321/paper.pdf), and [gene expression analysis](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.208.993).
-
-**Seaborn Resources:**
-* The official Seaborn website has a series of [detailed tutorials](http://web.stanford.edu/~mwaskom/software/seaborn/tutorial.html) and an [example gallery](http://web.stanford.edu/~mwaskom/software/seaborn/examples/index.html).
-* [Data visualization with Seaborn](https://beta.oreilly.com/learning/data-visualization-with-seaborn) is a quick tour of some of the popular types of Seaborn plots.
-* [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html) and [How to Create NBA Shot Charts in Python](http://savvastjortjoglou.com/nba-shot-sharts.html) are both good examples of Seaborn usage on real-world data.
 
 -----
 
