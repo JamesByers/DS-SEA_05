@@ -27,8 +27,8 @@ Monday | Wednesday
 2/27: L20 **Final Project Presentations** | 
 
 
+**Bonus Content**
  --- | ---
-**Bonus Content** | 
 Bonus content: [SVC - Support Vector Classifier](#svc) | 
 Bonus content: [Naive Bayes Classifier](#bayes)| 
 Bonus content: [Intro to Neural Networks](#nn) | 
