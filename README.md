@@ -26,12 +26,9 @@ Monday | Wednesday
 2/20: Holiday | 2/22: [L19 Where to go next + bonus topics](#19_topics)
 2/27: L20 **Final Project Presentations** | 
 
-
-**Bonus Content**
- --- | ---
-Bonus content: [SVC - Support Vector Classifier](#svc) | 
-Bonus content: [Naive Bayes Classifier](#bayes)| 
-Bonus content: [Intro to Neural Networks](#nn) | 
+Bonus content: [SVC - Support Vector Classifier](#svc)
+Bonus content: [Naive Bayes Classifier](#bayes)
+Bonus content: [Intro to Neural Networks](#nn)
 
 
 ## Submission Forms
