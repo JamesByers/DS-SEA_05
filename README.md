@@ -1,5 +1,5 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  ## DS-SEA-5 course repository
-###General Assembly Data Science course
+## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  DS-SEA-5 course repository
+### General Assembly Data Science course
 **Location:** Seattle, WA
 <br><b>Class times:</b> Mon and Wed 6:30pm - 9:30pm</br>
 <b/>Instructor:</b> <a href="https://www.linkedin.com/profile/view?id=ADEAAAEai9UBI1CGmAPFMYpURJeL9zvxWX6xBqI">Jim Byers</a>
@@ -12,7 +12,6 @@ Monday | Wednesday
 12/5: [L01 Introduction to Data Science](#class-1) | 12/7: [L02 Research design and Pandas](#research-design)
 12/12: [L03 Statistics fundamentals](#stat_fund) | 12/14: [L04 Command Line and Version Control](#command-line)
 12/19: [L05 Fetching Data](#fetching-data), **Project Discussion Deadline** |  
-  |  
 **Foundations of data modeling**|
  | 12/21: [L06 Intro to Classification - K nearest neighbor](#knn), **Project Question and Dataset Due**
 12/26: Holiday | 12/28: Holiday
