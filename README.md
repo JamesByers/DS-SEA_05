@@ -25,9 +25,10 @@ Monday | Wednesday
 2/13: [L17 Modeling with Time Series Data I](#time1), **Peer Review Due** | 2/15: [L18 Modeling with Time Series Data II](#time2)
 2/20: Holiday | 2/22: [L19 Where to go next + bonus topics](#19_topics)
 2/27: L20 **Final Project Presentations** | 
- | 
- | 
- | 
+
+
+
+ --|--
 **Bonus Content** | 
 Bonus content: [SVC - Support Vector Classifier](#svc) | 
 Bonus content: [Naive Bayes Classifier](#bayes)| 
@@ -37,6 +38,7 @@ Bonus content: [Intro to Neural Networks](#nn) |
 ## Submission Forms
 
 #### [Exit ticket form](https://docs.google.com/a/generalassemb.ly/forms/d/e/1FAIpQLSf5Xu6cWauNAhUfSMmYw5VUv8v4ADStBIQAqdbEmIIS-ziefw/viewform)
+
 <!--
 (https://docs.google.com/a/generalassemb.ly/forms/d/10L0tgB2X70bIHAzb1d0_4guWmCEqxavhQAHM1t1I4-Y/viewform)
 -->
