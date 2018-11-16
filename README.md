@@ -19,8 +19,7 @@ Monday | Wednesday
 1/9: [L08 Evaluating Model Fit](#evaluating-fit) | 1/11: [L09 Classifying with Logistic Regression](#logistic-regression)
 1/16: Holiday | 1/18: [L10 Advanced model evaluation](#advanced-model)
 1/23: [L11 Standardization and Clustering](#clustering) | 1/25: L12 **First Project Presentations** + bonus topics | 
- | 
-**Data science in the real world**|
+**Data science in the real world**| 
 1/30: [L13 Natural Language Processing](#nlp1) | 2/1: [L14 Dimensionality reduction](#reduction), **Draft Paper Due**
 2/6: [L15 Decision Trees](#decision) | 2/8: [L16 Ensembling, Bagging and Random Forests](#ensemble)
 2/13: [L17 Modeling with Time Series Data I](#time1), **Peer Review Due** | 2/15: [L18 Modeling with Time Series Data II](#time2)
